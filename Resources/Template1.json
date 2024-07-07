@@ -1,0 +1,63 @@
+{
+
+    "menu": {
+
+        "mouseover": "LKTF-Linkmenü",
+
+        "icon": "/path/to/iconfile",
+
+        "items": [
+
+            {
+
+                "title": "Intranet",
+
+                "url": "http://intranet3.kvtf.dom/"
+
+            },
+
+            {
+
+                "title": "Jitsi",
+
+                "url": "https://meet.teltow-flaeming.de/"
+
+            },
+
+           {
+
+                "title": "Telefonbuch",
+
+                "url": "http://telefon.kvtf.dom/"
+
+            },
+
+            {
+
+                "title": "Zeitkonto",
+
+                "url": "https://zeit2.lktf.dom/cgi-bin/htm_work.cgi?1"
+
+            },
+
+            {
+
+                "title": "Zeitbuchung",
+
+                "url": "https://zeit2.lktf.dom/cgi-bin/htm_term.cgi"
+
+            },
+
+            {
+
+                "title": "Website",
+
+                "url": "https://www.teltow-flaeming.de/"
+
+            }
+
+        ]
+
+    }
+
+}

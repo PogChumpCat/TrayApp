@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|c:\\users\\oleksandr\\source\\repos\\trayapp\\classes\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:classes\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\classes\\tray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:classes\\tray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\dictionary1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:dictionary1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 531,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dictionary1.xaml",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Dictionary1.xaml",
+              "RelativeDocumentMoniker": "Dictionary1.xaml",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Dictionary1.xaml",
+              "RelativeToolTip": "Dictionary1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-07T18:00:04.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-07T14:59:07.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:59:02.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:02:41.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tray.cs",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Classes\\Tray.cs",
+              "RelativeDocumentMoniker": "Classes\\Tray.cs",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Classes\\Tray.cs",
+              "RelativeToolTip": "Classes\\Tray.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T15:06:27.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Root.cs",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Classes\\Root.cs",
+              "RelativeDocumentMoniker": "Classes\\Root.cs",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Classes\\Root.cs",
+              "RelativeToolTip": "Classes\\Root.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T18:34:05.166Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 137,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
