@@ -2,39 +2,42 @@
 using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
-using System.Collections.Generic;
 using System.Text;
 
 namespace TrayApp.Classes
 {
     internal class Tray
     {
-        private string username;
         private NotifyIcon notifyIcon;
         private ContextMenuStrip contextMenu;
 
 
         public void InitializeNotifyIcon()
         {
+            ConvertImage convertImage = new ConvertImage();
             var tmp = "";
-            username = Environment.UserName;
-
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string folderPath = Path.Combine(appDataPath, "TrayApp");
+            string filePath = Path.Combine(folderPath, "config.json");
 
             try
             {
-                tmp = File.ReadAllText($"C/Users/{username}/AppData/Local/TrayApp/comfig.json");
+                tmp = File.ReadAllText(filePath);
             }
             catch 
             {
-                tmp = Encoding.UTF8.GetString(Properties.Resources.Template);
+                Directory.CreateDirectory(folderPath);
+                tmp = Encoding.UTF8.GetString(Properties.Resources.config);
+                File.WriteAllText(filePath, tmp);
             }
 
 
             Root root = Newtonsoft.Json.JsonConvert.DeserializeObject<Root>(tmp);
 
-            if(root.menu.icon != null)
+            if(root.menu.trayIcon != null)
             {
-
+                var icon = root.menu.trayIcon;
+                convertImage.Base64ToImage(icon);
             }
            
 
