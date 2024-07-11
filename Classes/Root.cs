@@ -10,22 +10,37 @@ namespace TrayApp.Classes
 {
     internal class Root
     {
-        public Menu menu { get; set; }
+        public Menu Menu { get; set; }
+
+        public void Serialise(string filePath, Root root)
+        {
+            var tmp = JsonConvert.SerializeObject(root, Formatting.Indented);
+            File.WriteAllText(filePath, tmp);
+        }
+
+        public Root Deserialise(string filePath)
+        {
+            var tmp = File.ReadAllText(filePath);
+
+            var root = JsonConvert.DeserializeObject<Root>(tmp);
+            root.Menu.Icon = ConvertImage.Base64ToIcon(root.Menu.TrayIcon);
+            return root;
+        }
     }
 
-    struct Menu
+    class Menu
     {
-        public string mouseover { get; set; }
-        public string trayIcon { get; set; }
+        public string Mouseover { get; set; }
+        public string TrayIcon { get; set; }
 
-        public List<Item> items { get; set; }
+        public List<Item> Items { get; set; }
         [JsonIgnore]
-        public Image Image { get; set; }
+        public Icon Icon { get; set; }
     }
 
-    struct Item
+    class Item
     {
-        public string title { get; set; }
-        public string url { get; set; }
+        public string Title { get; set; }
+        public string Url { get; set; }
     }
 }

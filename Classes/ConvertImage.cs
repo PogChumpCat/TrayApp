@@ -10,8 +10,6 @@ namespace TrayApp.Classes
 {
     internal class ConvertImage
     {
-
-
         public static string ImageToBase64(string imagePath)
         {
             using (Image image = Image.FromFile(imagePath))
@@ -33,7 +31,7 @@ namespace TrayApp.Classes
 
 
 
-        public static Image Base64ToImage(string base64String)
+        public static Icon Base64ToIcon(string base64String)
         {
             // Конвертуємо Base64 рядок у масив байтів
             byte[] imageBytes = Convert.FromBase64String(base64String);
@@ -41,9 +39,8 @@ namespace TrayApp.Classes
             // Використовуємо MemoryStream для створення зображення з байтів
             using (var ms = new MemoryStream(imageBytes))
             {
-                return Image.FromStream(ms);
+                return new Icon(ms);
             }
         }
-
     }
 }

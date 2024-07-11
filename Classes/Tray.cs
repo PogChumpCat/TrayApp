@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace TrayApp.Classes
 {
@@ -10,11 +11,11 @@ namespace TrayApp.Classes
     {
         private NotifyIcon notifyIcon;
         private ContextMenuStrip contextMenu;
+        Root root = new Root();
 
 
         public void InitializeNotifyIcon()
         {
-            ConvertImage convertImage = new ConvertImage();
             var tmp = "";
             string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             string folderPath = Path.Combine(appDataPath, "TrayApp");
@@ -24,7 +25,7 @@ namespace TrayApp.Classes
             {
                 tmp = File.ReadAllText(filePath);
             }
-            catch 
+            catch
             {
                 Directory.CreateDirectory(folderPath);
                 tmp = Encoding.UTF8.GetString(Properties.Resources.config);
@@ -32,33 +33,43 @@ namespace TrayApp.Classes
             }
 
 
-            Root root = Newtonsoft.Json.JsonConvert.DeserializeObject<Root>(tmp);
+            root = root.Deserialise(filePath);
+            root.Serialise(filePath, root);
 
-            if(root.menu.trayIcon != null)
+            if (root.Menu.TrayIcon != null)
             {
-                var icon = root.menu.trayIcon;
-                convertImage.Base64ToImage(icon);
+                root.Menu.Icon = ConvertImage.Base64ToIcon(root.Menu.TrayIcon);
             }
-           
 
-            notifyIcon = new NotifyIcon();
-            notifyIcon.Icon = new Icon("icon.ico", 128, 128);
-            notifyIcon.Text = "LKTF-Linkmen";
-            notifyIcon.Visible = true;
+            notifyIcon = new NotifyIcon
+            {
+                Icon = ConvertImage.Base64ToIcon($"{root.Menu.Icon}"),
+                Text = $"{root.Menu.Mouseover}",
+                Visible = true
+            };
 
             contextMenu = new ContextMenuStrip();
 
 
-            foreach (var menu in root.menu.items)
+            foreach (var menu in root.Menu.Items)
             {
-                var item = new ToolStripMenuItem();
-                item.Text = menu.title;
+                var item = new ToolStripMenuItem
+                {
+                    Text = menu.Title
+                };
                 item.Click += (sender, e) =>
                 {
-                    System.Diagnostics.Process.Start(menu.url);
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                    {
+                        FileName = menu.Url,
+                        UseShellExecute = true
+                    });
                 };
+
+                contextMenu.Items.Add(item);
             }
+
+            notifyIcon.ContextMenuStrip = contextMenu;
         }
     }
-
 }
