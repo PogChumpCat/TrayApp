@@ -27,7 +27,7 @@ namespace TrayApp
             var tray = new Tray();
             tray.InitializeNotifyIcon();
 
-            this.Close();
+            this.Hide();
         }
     }
 }

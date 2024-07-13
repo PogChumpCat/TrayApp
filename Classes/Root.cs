@@ -23,7 +23,6 @@ namespace TrayApp.Classes
             var tmp = File.ReadAllText(filePath);
 
             var root = JsonConvert.DeserializeObject<Root>(tmp);
-            root.Menu.Icon = ConvertImage.Base64ToIcon(root.Menu.TrayIcon);
             return root;
         }
     }

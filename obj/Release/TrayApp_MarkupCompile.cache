@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\
+C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\
 TrayApp
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Oleksandr\source\repos\TrayApp\App.xaml
 2-365279012
 

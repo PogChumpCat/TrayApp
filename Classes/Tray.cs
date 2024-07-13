@@ -34,16 +34,11 @@ namespace TrayApp.Classes
 
 
             root = root.Deserialise(filePath);
-            root.Serialise(filePath, root);
 
-            if (root.Menu.TrayIcon != null)
-            {
-                root.Menu.Icon = ConvertImage.Base64ToIcon(root.Menu.TrayIcon);
-            }
 
             notifyIcon = new NotifyIcon
             {
-                Icon = ConvertImage.Base64ToIcon($"{root.Menu.Icon}"),
+                Icon = Properties.Resources.logo,/*ConvertImage.Base64ToIcon($"{root.Menu.Icon}")*/
                 Text = $"{root.Menu.Mouseover}",
                 Visible = true
             };
@@ -56,12 +51,15 @@ namespace TrayApp.Classes
                 var item = new ToolStripMenuItem
                 {
                     Text = menu.Title
+                    
                 };
+                item.Image = null;
                 item.Click += (sender, e) =>
                 {
                     System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
                     {
                         FileName = menu.Url,
+                        
                         UseShellExecute = true
                     });
                 };
