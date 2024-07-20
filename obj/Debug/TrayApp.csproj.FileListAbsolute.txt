@@ -19,3 +19,4 @@ C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\TrayApp.csproj.Up2Date
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\TrayApp.exe
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\TrayApp.pdb
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\Dictionary1.baml
+C:\Users\Oleksandr\source\repos\TrayApp\bin\Debug\AutostartManager.dll

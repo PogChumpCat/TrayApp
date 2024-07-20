@@ -23,6 +23,7 @@ namespace TrayApp
     {
         public MainWindow()
         {
+
             InitializeComponent();
             var tray = new Tray();
             tray.InitializeNotifyIcon();

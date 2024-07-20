@@ -4,6 +4,8 @@ using System.Windows.Forms;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
+using System.Net.NetworkInformation;
+using AutostartManagement;
 
 namespace TrayApp.Classes
 {
@@ -12,14 +14,19 @@ namespace TrayApp.Classes
         private NotifyIcon notifyIcon;
         private ContextMenuStrip contextMenu;
         Root root = new Root();
+        public static string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        public static string folderPath = Path.Combine(appDataPath, "TrayApp");
+        public static string filePath = Path.Combine(folderPath, "config.json");
+
+        static bool registerShortcutForAllUser = false;
+        AutostartManager autostartManager = new AutostartManager(Application.ProductName, Application.ExecutablePath, registerShortcutForAllUser);
 
 
         public void InitializeNotifyIcon()
         {
+            autostartManager.IsAutostartEnabled();
+            autostartManager.EnableAutostart();
             var tmp = "";
-            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            string folderPath = Path.Combine(appDataPath, "TrayApp");
-            string filePath = Path.Combine(folderPath, "config.json");
 
             try
             {
