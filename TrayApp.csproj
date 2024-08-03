@@ -38,10 +38,10 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>13F523412C7804634EFC5A99E54A35A2F3514A38</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>804C6A8386A06D28C9A0566BCB18F24546433957</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>TrayApp_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>TrayApp_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AutostartManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -110,6 +110,7 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -124,6 +125,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intranet.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jitsi.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Telefonbuch.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Website.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zeitbuchung.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zeitkonto.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

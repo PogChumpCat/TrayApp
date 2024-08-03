@@ -19,3 +19,4 @@ C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\TrayApp.csproj.CoreCompileIn
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\TrayApp.csproj.Up2Date
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\TrayApp.exe
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\TrayApp.pdb
+C:\Users\Oleksandr\source\repos\TrayApp\bin\Release\AutostartManager.dll
