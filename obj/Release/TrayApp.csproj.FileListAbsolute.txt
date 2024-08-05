@@ -6,7 +6,6 @@ C:\Users\Oleksandr\source\repos\TrayApp\bin\Release\Newtonsoft.Json.dll
 C:\Users\Oleksandr\source\repos\TrayApp\bin\Release\Hardcodet.NotifyIcon.Wpf.xml
 C:\Users\Oleksandr\source\repos\TrayApp\bin\Release\Newtonsoft.Json.xml
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\TrayApp.csproj.AssemblyReference.cache
-C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\Dictionary1.baml
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\MainWindow.g.cs
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\App.g.cs
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Release\TrayApp_MarkupCompile.cache

@@ -28,10 +28,10 @@ namespace TrayApp
             _worker.DoWork += DoBackgroundWork;
             _worker.RunWorkerAsync();
 
-            if (tray.autoStart & !autostartManager.IsAutostartEnabled())
-            {
-                autostartManager.EnableAutostart();
-            }
+            //if (tray.autoStart & !autostartManager.IsAutostartEnabled())
+            //{
+            //    autostartManager.EnableAutostart();
+            //}
             //autostartManager.DisableAutostart();
 
         }
