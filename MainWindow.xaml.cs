@@ -12,7 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TrayApp.Classes;
+using TrayApp.Code.Classes;
+using UserControl = TrayApp.UI.UserControls;
 
 namespace TrayApp
 {
@@ -28,7 +29,46 @@ namespace TrayApp
             var tray = new Tray();
             tray.InitializeNotifyIcon();
 
-            this.Hide();
+            VerticalScrollBar.Minimum = 0;
+            VerticalScrollBar.Maximum = MainScrollViewer.ExtentHeight - MainScrollViewer.ViewportHeight;
+            VerticalScrollBar.ViewportSize = MainScrollViewer.ViewportHeight;
+
+            MainScrollViewer.ScrollChanged += MainScrollViewer_ScrollChanged;
+
+            //this.Hide();
+        }
+
+        private void MainScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
+        {
+            VerticalScrollBar.Value = MainScrollViewer.VerticalOffset;
+        }
+
+        private void VerticalScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            MainScrollViewer.ScrollToVerticalOffset(e.NewValue);
+        }
+
+        public void AddNewElement(string content, Brush backgroundColor)
+        {
+            var newElement = UserControl.Template.GetAddon();
+
+            DynamicContentPanel.Children.Add(newElement);
+            UpdateScrollBar();
+        }
+
+        private void UpdateScrollBar()
+        {
+            MainScrollViewer.UpdateLayout();
+            VerticalScrollBar.Minimum = 0;
+            VerticalScrollBar.Maximum = MainScrollViewer.ExtentHeight - MainScrollViewer.ViewportHeight;
+            VerticalScrollBar.ViewportSize = MainScrollViewer.ViewportHeight;
+
+            VerticalScrollBar.Visibility = VerticalScrollBar.Maximum > 0 ? Visibility.Visible : Visibility.Collapsed;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AddNewElement("hi", Background);
         }
     }
 }

@@ -20,3 +20,6 @@ C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\TrayApp.exe
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\TrayApp.pdb
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\Dictionary1.baml
 C:\Users\Oleksandr\source\repos\TrayApp\bin\Debug\AutostartManager.dll
+C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\UI\UserControls\Input.baml
+C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\UI\UserControls\Input.g.cs
+C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\Code\App.g.cs

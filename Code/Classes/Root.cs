@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 
 
-namespace TrayApp.Classes
+namespace TrayApp.Code.Classes
 {
     internal class Root
     {

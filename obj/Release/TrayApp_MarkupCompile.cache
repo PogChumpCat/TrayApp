@@ -9,12 +9,12 @@ TrayApp
 none
 false
 TRACE
-C:\Users\Oleksandr\source\repos\TrayApp\App.xaml
-1219584333
+C:\Users\Oleksandr\source\repos\TrayApp\Code\App.xaml
+31262208465
 
-71939073129
+9-1382932758
 18-1442965775
-MainWindow.xaml;
+MainWindow.xaml;UI\UserControls\Input.xaml;UI\UserControls\Template.xaml;
 
-False
+True
 

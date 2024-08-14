@@ -3,10 +3,49 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:UserControls="clr-namespace:TrayApp.UI.UserControls"
         xmlns:local="clr-namespace:TrayApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+     <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#e4e4e4"/>
+        </Grid.Background>
+         
+         
+        <Grid x:Name="options" Margin="200,100,200,100">
+            <Grid.Background>
+                <SolidColorBrush Color="#cacaca"/>
+            </Grid.Background>
         
+        <!-- Main content area -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Content area to scroll -->
+        <ScrollViewer x:Name="MainScrollViewer" Grid.Column="0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel x:Name="DynamicContentPanel" Orientation="Vertical">
+               
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Vertical ScrollBar -->
+        <ScrollBar x:Name="VerticalScrollBar" Grid.Column="1" 
+                   Orientation="Vertical" 
+                   Height="Auto" 
+                   ValueChanged="VerticalScrollBar_ValueChanged"/>
+
+        </Grid>
+
+        <Button Content="+" FontSize="24" FontFamily="1" Height="40" Width="40" Margin="750,10,10,384" Click="Button_Click">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Panel.ZIndex" Value="1000"/>
+                </Style>
+            </Button.Style>
+        </Button>
+         
     </Grid>
 </Window>

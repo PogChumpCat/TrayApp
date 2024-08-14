@@ -7,10 +7,10 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using TrayApp.Classes;
+using TrayApp.Code.Classes;
 using WinFormsApp = System.Windows.Forms.Application;
 
-namespace TrayApp
+namespace TrayApp.Code
 {
     /// <summary>
     /// Interaction logic for App.xaml

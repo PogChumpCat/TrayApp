@@ -8,7 +8,7 @@ using System.Net.NetworkInformation;
 using AutostartManagement;
 using Microsoft.Win32;
 
-namespace TrayApp.Classes
+namespace TrayApp.Code.Classes
 {
     internal class Tray
     {

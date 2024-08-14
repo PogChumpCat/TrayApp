@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="TrayApp.UI.UserControls.Input"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="250">
+    <Grid>
+        <TextBox x:Name="TxtInput" Height="30" VerticalAlignment="Center" FontSize="16" FontWeight="Light" 
+    Background="White" TextChanged="TxtInput_TextChanged"/>
+        <TextBlock x:Name="TblContext" Text="{Binding Placeholder, RelativeSource={RelativeSource AncestorType=UserControl}}" 
+                   FontSize="16" FontWeight="Light" VerticalAlignment="Center" Margin="80,0,80,0"
+                   Foreground="DarkGray" Background="Transparent" Panel.ZIndex="-1" Height="30" />
+        <Button x:Name="BtnClear" Width="30" HorizontalAlignment="Right" Content="X" BorderThickness="0"
+    Background="Transparent" Foreground="LightGray" BorderBrush="White"
+    Click="BtnClear_Click"/>
+    </Grid>
+</UserControl>
