@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Net.NetworkInformation;
 using AutostartManagement;
 using Microsoft.Win32;
+using TrayApp.Classes;
 
 namespace TrayApp.Classes
 {
@@ -19,7 +20,7 @@ namespace TrayApp.Classes
         public static string folderPath = Path.Combine(appDataPath, "TrayApp");
         public static string filePath = Path.Combine(folderPath, "config.json");
         public static string icoPath = Path.Combine(folderPath, "Images");
-        public bool autoStart = true;   
+        public bool autoStart = true;
 
         public void InitializeNotifyIcon()
         {
@@ -63,14 +64,14 @@ namespace TrayApp.Classes
                 {
                     Text = menu.Title,
                     Image = iconImage
-                    
+
                 };
                 item.Click += (sender, e) =>
                 {
                     System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
                     {
                         FileName = menu.Url,
-                        
+
                         UseShellExecute = true
                     });
                 };

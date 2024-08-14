@@ -140,5 +140,9 @@
   <ItemGroup>
     <None Include="Resources\Zeitkonto.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Stable versions\Inno Setup\trayapp installer.iss" />
+    <Content Include="Stable versions\TrayApp_1.3.0.exe" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
