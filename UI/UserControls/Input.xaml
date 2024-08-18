@@ -4,15 +4,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="30" d:DesignWidth="250">
+             d:DesignHeight="20" d:DesignWidth="250">
     <Grid>
-        <TextBox x:Name="TxtInput" Height="30" VerticalAlignment="Center" FontSize="16" FontWeight="Light" 
-    Background="White" TextChanged="TxtInput_TextChanged"/>
+        <Grid Height="20" Background="White" Panel.ZIndex="-2" Margin="1,1,0,0"/>
+        <TextBox x:Name="TxtInput" FontFamily="1" Margin="0,0,0,0" Height="20" VerticalAlignment="Center" FontSize="16" FontWeight="Light" 
+    Background="Transparent" TextChanged="TxtInput_TextChanged"/>
         <TextBlock x:Name="TblContext" Text="{Binding Placeholder, RelativeSource={RelativeSource AncestorType=UserControl}}" 
-                   FontSize="16" FontWeight="Light" VerticalAlignment="Center" Margin="80,0,80,0"
-                   Foreground="DarkGray" Background="Transparent" Panel.ZIndex="-1" Height="30" />
-        <Button x:Name="BtnClear" Width="30" HorizontalAlignment="Right" Content="X" BorderThickness="0"
-    Background="Transparent" Foreground="LightGray" BorderBrush="White"
-    Click="BtnClear_Click"/>
+                   FontSize="14"  FontWeight="Light"  VerticalAlignment="Center" Margin="4,0,30,0"
+                   Foreground="DarkGray" Background="Transparent" Panel.ZIndex="-1" Height="20" />
+        <Button x:Name="BtnClear" Width="20" HorizontalAlignment="Right" VerticalAlignment="Center" Content="×" ContentStringFormat="" BorderThickness="0"
+    Background="Transparent" Foreground="LightGray" BorderBrush="Transparent" Click="BtnClear_Click" FontSize="16" FontFamily="1"/>
     </Grid>
 </UserControl>

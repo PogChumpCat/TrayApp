@@ -20,13 +20,20 @@ namespace TrayApp.UI.UserControls
     /// </summary>
     public partial class Template : UserControl
     {
-        public static Grid GetAddon()
-        {
-            return null;
-        }
         public Template()
         {
+
+        }
+
+        public Template(int number)
+        {
             InitializeComponent();
+            Number.Text = number.ToString();
+        }
+
+        public Grid GetAddon()
+        {
+            return addons;  
         }
     }
 }

@@ -3,49 +3,72 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:UserControls="clr-namespace:TrayApp.UI.UserControls"
+        xmlns:Control="clr-namespace:TrayApp.UI.UserControls"
         xmlns:local="clr-namespace:TrayApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-     <Grid>
-        <Grid.Background>
-            <SolidColorBrush Color="#e4e4e4"/>
-        </Grid.Background>
-         
-         
-        <Grid x:Name="options" Margin="200,100,200,100">
-            <Grid.Background>
-                <SolidColorBrush Color="#cacaca"/>
-            </Grid.Background>
-        
-        <!-- Main content area -->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
+    <Grid>
+        <TabControl Grid.Column="0">
+            <TabItem Header="TabItem">
+                <Grid>
 
-        <!-- Content area to scroll -->
-        <ScrollViewer x:Name="MainScrollViewer" Grid.Column="0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled">
-            <StackPanel x:Name="DynamicContentPanel" Orientation="Vertical">
-               
-            </StackPanel>
-        </ScrollViewer>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition MinWidth="200" Width="100*"/>
+                        <ColumnDefinition Width="117*"/>
+                        <ColumnDefinition Width="27*"/>
+                    </Grid.ColumnDefinitions>
 
-        <!-- Vertical ScrollBar -->
-        <ScrollBar x:Name="VerticalScrollBar" Grid.Column="1" 
-                   Orientation="Vertical" 
-                   Height="Auto" 
-                   ValueChanged="VerticalScrollBar_ValueChanged"/>
+                    <Grid.Background>
+                        <SolidColorBrush Color="#e4e4e4"/>
+                    </Grid.Background>
 
-        </Grid>
+                    <Grid x:Name="options" Margin="0,0,0,0">
+                        <Grid.Background>
+                            <SolidColorBrush Color="#cacaca"/>
+                        </Grid.Background>
 
-        <Button Content="+" FontSize="24" FontFamily="1" Height="40" Width="40" Margin="750,10,10,384" Click="Button_Click">
-            <Button.Style>
-                <Style TargetType="Button">
-                    <Setter Property="Panel.ZIndex" Value="1000"/>
-                </Style>
-            </Button.Style>
-        </Button>
-         
+                        <!-- Main content area -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Content area to scroll -->
+                        <ScrollViewer x:Name="MainScrollViewer" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Panel.ZIndex="0" ScrollChanged="MainScrollViewer_ScrollChanged">
+                            <StackPanel x:Name="DynamicContentPanel" Orientation="Vertical">
+                                <Control:Template/>
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <!-- Vertical ScrollBar -->
+                        <ScrollBar x:Name="VerticalScrollBar" Grid.Column="1"
+                                   Orientation="Vertical"
+                                   Height="Auto"
+                                   Minimum="0"
+                                   Maximum="{Binding ElementName=MainScrollViewer, Path=ScrollableHeight}"
+                                   ValueChanged="VerticalScrollBar_ValueChanged"/>
+                    </Grid>
+
+                    <Grid x:Name="row" Grid.Column="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                    </Grid>
+
+                    <Button Content="+" Grid.Column="3"  Grid.Row="0" MinHeight="20" MinWidth="20" FontSize="24" FontFamily="1" Click="Add_Click" VerticalAlignment="Top" Margin="10"/>
+                    <Button Content="-" Grid.Column="3" Grid.Row="1" MinHeight="20" MinWidth="20" FontSize="24" FontFamily="1" Click="Remove_Click" VerticalAlignment="Top" Margin="10,56,10,0"/>
+
+
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>

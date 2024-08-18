@@ -142,4 +142,7 @@
   <data name="Zeitkonto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Zeitkonto.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="File" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-файл-50.png;System.Byte[]</value>
+  </data>
 </root>

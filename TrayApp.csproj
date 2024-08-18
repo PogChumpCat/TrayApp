@@ -75,8 +75,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Code\Classes\LinkDesigner.cs" />
     <Compile Include="UI\UserControls\Input.xaml.cs">
       <DependentUpon>Input.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\Path_Input.xaml.cs">
+      <DependentUpon>Path_Input.xaml</DependentUpon>
     </Compile>
     <Compile Include="UI\UserControls\Template.xaml.cs">
       <DependentUpon>Template.xaml</DependentUpon>
@@ -96,6 +100,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="UI\UserControls\Input.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UserControls\Path_Input.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,7 +131,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Code\packages.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -131,7 +139,7 @@
     <None Include="Resources\config.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Code\App.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo.ico" />
@@ -154,6 +162,11 @@
   <ItemGroup>
     <None Include="Resources\Zeitkonto.ico" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\Windows\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

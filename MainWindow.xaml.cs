@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TrayApp.Code.Classes;
+using TrayApp.UI.UserControls;
 using UserControl = TrayApp.UI.UserControls;
 
 namespace TrayApp
@@ -22,9 +23,10 @@ namespace TrayApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int amount = 1;  // Зробили полем, замість статичної властивості
+
         public MainWindow()
         {
-
             InitializeComponent();
             var tray = new Tray();
             tray.InitializeNotifyIcon();
@@ -34,8 +36,6 @@ namespace TrayApp
             VerticalScrollBar.ViewportSize = MainScrollViewer.ViewportHeight;
 
             MainScrollViewer.ScrollChanged += MainScrollViewer_ScrollChanged;
-
-            //this.Hide();
         }
 
         private void MainScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
@@ -48,12 +48,38 @@ namespace TrayApp
             MainScrollViewer.ScrollToVerticalOffset(e.NewValue);
         }
 
-        public void AddNewElement(string content, Brush backgroundColor)
+        public void AddNewElement()
         {
-            var newElement = UserControl.Template.GetAddon();
+            if (DynamicContentPanel.Children.Count > 0)
+            {
+                var separator = new Separator
+                {
+                    Margin = new Thickness(0, 5, 0, 5),
+                    Background = Brushes.Gray,
+                    Height = 1
+                };
+                DynamicContentPanel.Children.Add(separator);
+            }
 
-            DynamicContentPanel.Children.Add(newElement);
+            var temp = new Template(amount);  // Передаємо значення amount в конструктор
+            DynamicContentPanel.Children.Add(temp);
+            amount++;  // Інкрементуємо amount
             UpdateScrollBar();
+        }
+
+        public void RemoveElement()
+        {
+            if (DynamicContentPanel.Children.Count > 0)
+            {
+                DynamicContentPanel.Children.RemoveAt(DynamicContentPanel.Children.Count - 1);
+
+                if (DynamicContentPanel.Children.Count > 0 && DynamicContentPanel.Children[DynamicContentPanel.Children.Count - 1] is Separator)
+                {
+                    DynamicContentPanel.Children.RemoveAt(DynamicContentPanel.Children.Count - 1);
+                }
+                amount--;  // Декрементуємо amount
+                UpdateScrollBar();
+            }
         }
 
         private void UpdateScrollBar()
@@ -66,9 +92,15 @@ namespace TrayApp
             VerticalScrollBar.Visibility = VerticalScrollBar.Maximum > 0 ? Visibility.Visible : Visibility.Collapsed;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Add_Click(object sender, RoutedEventArgs e)
         {
-            AddNewElement("hi", Background);
+            AddNewElement();
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+            RemoveElement();
         }
     }
+
 }
