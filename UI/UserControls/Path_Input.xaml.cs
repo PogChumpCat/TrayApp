@@ -40,8 +40,10 @@ namespace TrayApp.UI.UserControls
 
         private void BtnSearch_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new Win.OpenFileDialog();
-            dialog.Filter = "Text documents (.txt)|*.txt";
+            var dialog = new Win.OpenFileDialog
+            {
+                Filter = "Text documents (.txt)|*.txt"
+            };
             var result = dialog.ShowDialog();
             if (result.HasValue == true)
             {

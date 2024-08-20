@@ -10,17 +10,17 @@ using System.Windows;
 using TrayApp.Code.Classes;
 using WinFormsApp = System.Windows.Forms.Application;
 
-namespace TrayApp.Code
+namespace TrayApp
 {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
-    public partial class App : System.Windows.Application
+    public partial class App : Application
     {
         static readonly bool registerShortcutForAllUser = false;
         readonly AutostartManager autostartManager = new AutostartManager(WinFormsApp.ProductName, WinFormsApp.ExecutablePath, registerShortcutForAllUser);
         private readonly BackgroundWorker _worker = new BackgroundWorker();
-        private readonly Tray tray = new Tray();
+        public bool autoStart = false;
 
 
         protected override void OnStartup(StartupEventArgs e)
@@ -28,12 +28,14 @@ namespace TrayApp.Code
             _worker.DoWork += DoBackgroundWork;
             _worker.RunWorkerAsync();
 
-            //if (tray.autoStart & !autostartManager.IsAutostartEnabled())
-            //{
-            //    autostartManager.EnableAutostart();
-            //}
-            //autostartManager.DisableAutostart();
-
+            if (autoStart & !autostartManager.IsAutostartEnabled())
+            {
+                autostartManager.EnableAutostart();
+            }
+            else if (!autoStart && autostartManager.IsAutostartEnabled())
+            {
+                autostartManager.DisableAutostart();
+            }
         }
 
         private void DoBackgroundWork(object sender, DoWorkEventArgs e)

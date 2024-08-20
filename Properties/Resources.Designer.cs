@@ -101,12 +101,22 @@ namespace TrayApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static System.Drawing.Icon logo {
+        internal static byte[] logo {
             get {
                 object obj = ResourceManager.GetObject("logo", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] logoPNG {
+            get {
+                object obj = ResourceManager.GetObject("logoPNG", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

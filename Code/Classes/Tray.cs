@@ -11,71 +11,173 @@ using Microsoft.Win32;
 namespace TrayApp.Code.Classes
 {
     internal class Tray
+
     {
+
         private NotifyIcon notifyIcon;
+
         private ContextMenuStrip contextMenu;
+
         Root root = new Root();
-        public static string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        public static string folderPath = Path.Combine(appDataPath, "TrayApp");
-        public static string filePath = Path.Combine(folderPath, "config.json");
-        public static string icoPath = Path.Combine(folderPath, "Images");
-        public bool autoStart = true;   
+
+        public bool autoStart = false;
+
+
 
         public void InitializeNotifyIcon()
+
         {
+
             var tmp = "";
-            contextMenu = new ContextMenuStrip();
+
+            string name = Environment.UserName;
+
+            string appDataPath = $"C:\\Users\\{name}\\AppData\\Roaming";
+
+            string folderPath = Path.Combine(appDataPath, "TrayApp");
+
+            string icoPath = Path.Combine(folderPath, "logo.ico");
+
+            string imgsPath = Path.Combine(folderPath, "Images");
+
+            string filePath = Path.Combine(folderPath, "config.json");
+
+
+
 
 
             try
+
             {
+
                 tmp = File.ReadAllText(filePath);
+
             }
+
             catch
+
             {
+
                 Directory.CreateDirectory(folderPath);
+
+                Directory.CreateDirectory(imgsPath);
+
                 tmp = Encoding.UTF8.GetString(Properties.Resources.config);
+
                 File.WriteAllText(filePath, tmp);
+
+
+
             }
 
-            root = root.Deserialise(filePath);
 
+            root = root.Deserialize(filePath);
 
 
             notifyIcon = new NotifyIcon
+
             {
-                Icon = Properties.Resources.logo,
+
                 Text = $"{root.Menu.Mouseover}",
+
                 Visible = true
+
             };
 
 
 
-            foreach (var menu in root.Menu.Items)
+            if (File.Exists(icoPath))
             {
-                Image iconImage;
-                using (var stream = new FileStream(Path.Combine(icoPath, $"{menu.Title}.png"), FileMode.Open))
+                notifyIcon.Icon = new Icon(icoPath);
+            }
+            else
+            {
+                using (MemoryStream ms = new MemoryStream(Properties.Resources.logo))
                 {
-                    iconImage = Image.FromStream(stream);
+                    notifyIcon.Icon = new Icon(ms);
+                }
+            }
+
+            contextMenu = new ContextMenuStrip();
+
+            try
+
+            {
+
+
+
+                foreach (var menu in root.Menu.Items)
+
+                {
+
+                    var path = Path.Combine(imgsPath, $"{menu.Title}.png");
+
+                    var item = new ToolStripMenuItem
+
+                    {
+
+                        Text = menu.Title,
+
+                    };
+
+
+
+                    if (File.Exists(path))
+                    {
+                        item.Image = Image.FromFile(path);
+                    }
+                    else
+                    {
+                        using (MemoryStream ms = new MemoryStream(Properties.Resources.logoPNG))
+                        {
+                            item.Image = Image.FromStream(ms);
+                        }
+                    }
+
+
+                    item.Click += (sender, e) =>
+
+                    {
+
+                        System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+
+                        {
+
+                            FileName = menu.Url,
+
+                            UseShellExecute = true
+
+                        });
+
+                    };
+
+                    contextMenu.Items.Add(item);
+
                 }
 
-                var item = new ToolStripMenuItem
-                {
-                    Text = menu.Title,
-                    Image = iconImage
-                    
-                };
-                item.Click += (sender, e) =>
-                {
-                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-                    {
-                        FileName = menu.Url,
-                        
-                        UseShellExecute = true
-                    });
-                };
-                contextMenu.Items.Add(item);
             }
+
+            catch (Exception ex)
+
+            {
+
+                File.WriteAllText($"\\\\filer01.lktf.dom\\{name}\\Home\\Desktop\\error.txt", $"{ex}");
+
+            }
+
+            notifyIcon.ContextMenuStrip = contextMenu;
+
+
+
+            notifyIcon.DoubleClick += (sender, e) =>
+
+            {
+
+                MainWindow window = new MainWindow(true);
+
+
+
+            };
 
             var exit = new ToolStripMenuItem
             {

@@ -15,7 +15,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition MinWidth="200" Width="100*"/>
                         <ColumnDefinition Width="117*"/>
-                        <ColumnDefinition Width="27*"/>
+                        <ColumnDefinition MinWidth="20" Width="27*"/>
                     </Grid.ColumnDefinitions>
 
                     <Grid.Background>
@@ -49,17 +49,20 @@
                                    ValueChanged="VerticalScrollBar_ValueChanged"/>
                     </Grid>
 
-                    <Grid x:Name="row" Grid.Column="3">
+                    <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
+                    
+                        <CheckBox Grid.Column="1" Grid.Row="0" Content="Autoatart" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+                        
                     </Grid>
 
-                    <Button Content="+" Grid.Column="3"  Grid.Row="0" MinHeight="20" MinWidth="20" FontSize="24" FontFamily="1" Click="Add_Click" VerticalAlignment="Top" Margin="10"/>
-                    <Button Content="-" Grid.Column="3" Grid.Row="1" MinHeight="20" MinWidth="20" FontSize="24" FontFamily="1" Click="Remove_Click" VerticalAlignment="Top" Margin="10,56,10,0"/>
+                    <Button Content="+" Grid.Column="3" Height="30" Width="30" FontSize="24" FontFamily="1" Click="Add_Click" VerticalAlignment="Top" Margin="10"/>
+                    <Button Content="-" Grid.Column="3" Height="30" Width="30" FontSize="24" FontFamily="1" Click="Remove_Click" VerticalAlignment="Top" Margin="10,56,10,0"/>
 
 
                 </Grid>

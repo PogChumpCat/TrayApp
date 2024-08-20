@@ -20,9 +20,9 @@ C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\TrayApp.pdb
 C:\Users\Oleksandr\source\repos\TrayApp\bin\Debug\AutostartManager.dll
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\UI\UserControls\Input.baml
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\UI\UserControls\Input.g.cs
-C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\Code\App.g.cs
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\UI\UserControls\Template.g.cs
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\UI\UserControls\Template.baml
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\UI\UserControls\Path_Input.g.cs
 C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\UI\UserControls\Path_Input.baml
+C:\Users\Oleksandr\source\repos\TrayApp\obj\Debug\App.g.cs

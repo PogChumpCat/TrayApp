@@ -38,6 +38,8 @@ namespace TrayApp
             MainScrollViewer.ScrollChanged += MainScrollViewer_ScrollChanged;
         }
 
+        public MainWindow(bool state) { if (state && !this.IsLoaded) { this.Visibility = Visibility.Visible; } else { this.Visibility = Visibility.Collapsed; } }
+
         private void MainScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
         {
             VerticalScrollBar.Value = MainScrollViewer.VerticalOffset;
@@ -100,6 +102,11 @@ namespace TrayApp
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
             RemoveElement();
+        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 
