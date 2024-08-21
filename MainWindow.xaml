@@ -36,7 +36,6 @@
                         <!-- Content area to scroll -->
                         <ScrollViewer x:Name="MainScrollViewer" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Panel.ZIndex="0" ScrollChanged="MainScrollViewer_ScrollChanged">
                             <StackPanel x:Name="DynamicContentPanel" Orientation="Vertical">
-                                <Control:Template/>
                             </StackPanel>
                         </ScrollViewer>
 
@@ -51,16 +50,28 @@
 
                     <Grid Grid.Column="1">
                         <Grid.RowDefinitions>
-                            <RowDefinition/>
+                            <RowDefinition>
+                             
+                            </RowDefinition>
                             <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
-                    
-                        <CheckBox Grid.Column="1" Grid.Row="0" Content="Autoatart" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+
+                        <Border Grid.Row="0" Background="Gray" Height="1" VerticalAlignment="Bottom"/>
+                        <Border Grid.Row="1" Background="Gray" Height="1" VerticalAlignment="Bottom"/>
+                        <Border Grid.Row="2" Background="Gray" Height="1" VerticalAlignment="Bottom"/>
+
+                        <CheckBox Grid.Column="1" Grid.Row="0" Content="Autoatart" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+
+                        <Control:Input x:Name="Mouseover" Grid.Row="0" Grid.Column="0" MinWidth="117" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Center" Placeholder="Mouseover" />
+                        <Control:Path_Input x:Name="IcoPath" Grid.Row="0" Grid.Column="0" MinWidth="117" HorizontalAlignment="Left" Margin="165,10,0,0" VerticalAlignment="Center" Placeholder="Path to Icon(.ico)" />
+
+                        <Control:AddCmbElm x:Name="addCmb" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Center" Placeholder="Add type of link" />
+                        <Control:DeleteCmbElm x:Name="delCmb" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="165,10,0,0" VerticalAlignment="Center"/>
                         
                     </Grid>
-
+                    <Border Grid.Column="3" Background="Gray" Panel.ZIndex="9" Width="1" HorizontalAlignment="Left"/>
                     <Button Content="+" Grid.Column="3" Height="30" Width="30" FontSize="24" FontFamily="1" Click="Add_Click" VerticalAlignment="Top" Margin="10"/>
                     <Button Content="-" Grid.Column="3" Height="30" Width="30" FontSize="24" FontFamily="1" Click="Remove_Click" VerticalAlignment="Top" Margin="10,56,10,0"/>
 

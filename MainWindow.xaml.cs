@@ -36,9 +36,15 @@ namespace TrayApp
             VerticalScrollBar.ViewportSize = MainScrollViewer.ViewportHeight;
 
             MainScrollViewer.ScrollChanged += MainScrollViewer_ScrollChanged;
+            AddNewElement();
         }
 
         public MainWindow(bool state) { if (state && !this.IsLoaded) { this.Visibility = Visibility.Visible; } else { this.Visibility = Visibility.Collapsed; } }
+
+        public static void Proces()
+        {
+
+        }
 
         private void MainScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
         {
@@ -63,9 +69,9 @@ namespace TrayApp
                 DynamicContentPanel.Children.Add(separator);
             }
 
-            var temp = new Template(amount);  // Передаємо значення amount в конструктор
+            var temp = new Template(amount);  
             DynamicContentPanel.Children.Add(temp);
-            amount++;  // Інкрементуємо amount
+            amount++;  
             UpdateScrollBar();
         }
 
@@ -79,7 +85,7 @@ namespace TrayApp
                 {
                     DynamicContentPanel.Children.RemoveAt(DynamicContentPanel.Children.Count - 1);
                 }
-                amount--;  // Декрементуємо amount
+                amount--;
                 UpdateScrollBar();
             }
         }
@@ -106,8 +112,10 @@ namespace TrayApp
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
-
+            //todo
         }
+
+
     }
 
 }

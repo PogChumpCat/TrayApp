@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Oleksandr\source\repos\TrayApp\App.xaml
-41529247204
+6-1609290730
 
-11-928977564
+13-981557686
 18-1442965775
-MainWindow.xaml;UI\UserControls\Input.xaml;UI\UserControls\Path_Input.xaml;UI\UserControls\Template.xaml;
+MainWindow.xaml;UI\UserControls\AddCmbElm.xaml;UI\UserControls\DeleteCmbElm.xaml;UI\UserControls\Input.xaml;UI\UserControls\Path_Input.xaml;UI\UserControls\Template.xaml;
 
 False
 

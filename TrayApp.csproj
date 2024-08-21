@@ -81,6 +81,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI\UserControls\AddCmbElm.xaml.cs">
+      <DependentUpon>AddCmbElm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserControls\DeleteCmbElm.xaml.cs">
+      <DependentUpon>DeleteCmbElm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\UserControls\Input.xaml.cs">
       <DependentUpon>Input.xaml</DependentUpon>
     </Compile>
@@ -104,6 +110,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UI\UserControls\AddCmbElm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\UserControls\DeleteCmbElm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UI\UserControls\Input.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

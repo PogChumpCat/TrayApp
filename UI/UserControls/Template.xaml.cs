@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 namespace TrayApp.UI.UserControls
 {
     /// <summary>
-    /// Interaction logic for Tamlate.xaml
+    /// Interaction logic for Template.xaml
     /// </summary>
     public partial class Template : UserControl
     {
@@ -33,7 +33,9 @@ namespace TrayApp.UI.UserControls
 
         public Grid GetAddon()
         {
-            return addons;  
+            return addons;
         }
+
+
     }
 }

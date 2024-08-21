@@ -1,9 +1,23 @@
-﻿using System.Windows;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
-
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace TrayApp.UI.UserControls
 {
+    /// <summary>
+    /// Interaction logic for Input.xaml
+    /// </summary>
     public partial class Input : UserControl
     {
         public Input()
@@ -39,7 +53,6 @@ namespace TrayApp.UI.UserControls
             TxtInput.Clear();
             TxtInput.Focus();
         }
-
         private void TxtInput_TextChanged(object sender, TextChangedEventArgs e)
         {
             TblContext.Visibility = string.IsNullOrEmpty(TxtInput.Text) ? Visibility.Visible : Visibility.Hidden;

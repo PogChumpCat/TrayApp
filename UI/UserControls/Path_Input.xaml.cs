@@ -1,13 +1,24 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 using Win = Microsoft.Win32;
-
 
 namespace TrayApp.UI.UserControls
 {
+    /// <summary>
+    /// Interaction logic for Path_Input.xaml
+    /// </summary>
     public partial class Path_Input : UserControl
     {
 
@@ -50,17 +61,6 @@ namespace TrayApp.UI.UserControls
                 TxtInput.Text = dialog.FileName;
             }
         }
-
-        private void TextInput_GotFocus(object sender, RoutedEventArgs e)
-        {
-            Border.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#579DE5"));
-        }
-
-        private void TextInput_LostFocus(object sender, RoutedEventArgs e)
-        {
-            Border.BorderBrush = new SolidColorBrush(Colors.Gray);
-        }
-
 
         private void TxtInput_TextChanged(object sender, TextChangedEventArgs e)
         {

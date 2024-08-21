@@ -5,19 +5,19 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TrayApp.UI.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="20" d:DesignWidth="250">
+                        d:DesignHeight="20" d:DesignWidth="250">
     <Grid >
         <Grid Height="20" Background="White" Panel.ZIndex="-2">
             <Border x:Name="Border" BorderBrush="#FFABADB3" BorderThickness="1,1,1,1"/>
         </Grid>
-        
-        <TextBox x:Name="TxtInput" FontFamily="1" Margin="0,0,20,0" Height="20" VerticalAlignment="Center" FontSize="14" FontWeight="Light" 
-            Background="Transparent" TextChanged="TxtInput_TextChanged" BorderBrush="Transparent" BorderThickness="0" 
-            GotFocus="TextInput_GotFocus" LostFocus="TextInput_LostFocus"/>
-        
+
+        <TextBox x:Name="TxtInput" Margin="0,0,20,0" Height="20" VerticalAlignment="Center" FontSize="14" FontWeight="Light" 
+           Background="Transparent" BorderBrush="Transparent" BorderThickness="0" 
+           TextChanged="TxtInput_TextChanged"/>
+
         <TextBlock x:Name="TblContext" Text="{Binding Placeholder, RelativeSource={RelativeSource AncestorType=UserControl}}" 
-            FontSize="14"  FontWeight="Light"  VerticalAlignment="Center" Margin="4,0,20,0"
-            Foreground="DarkGray" Background="Transparent" Panel.ZIndex="-1" MinHeight="20" />
+           FontSize="14"  FontWeight="Light"  VerticalAlignment="Center" Margin="4,0,20,0"
+           Foreground="DarkGray" Background="Transparent" Panel.ZIndex="-1" MinHeight="20" />
 
         <Button x:Name="BtnSeach" Width="20" Height="20"  HorizontalAlignment="Right" VerticalAlignment="Center" BorderThickness="0"
             Background="Transparent" Foreground="Transparent" BorderBrush="Transparent" Click="BtnSearch_Click">
