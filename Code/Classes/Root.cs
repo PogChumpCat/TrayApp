@@ -12,6 +12,13 @@ namespace TrayApp.Code.Classes
 
         public void Serialize(string filePath, Root root)
         {
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                root.Menu.Icon.Save(ms); 
+                root.Menu.IconBase64 = Convert.ToBase64String(ms.ToArray());
+            }
+
             foreach (var item in root.Menu.Items)
             {
                 if (item.Image != null)
@@ -24,7 +31,6 @@ namespace TrayApp.Code.Classes
                 }
             }
 
-            // Серіалізація об'єкту Root у JSON
             var tmp = JsonConvert.SerializeObject(root, Formatting.Indented);
             File.WriteAllText(filePath, tmp);
         }
@@ -34,7 +40,16 @@ namespace TrayApp.Code.Classes
             var tmp = File.ReadAllText(filePath);
             var root = JsonConvert.DeserializeObject<Root>(tmp);
 
-            // Десеріалізація кожного зображення з Base64
+            if (!string.IsNullOrEmpty(root.Menu.IconBase64))
+            {
+                byte[] iconBytes = Convert.FromBase64String(root.Menu.IconBase64);
+                using (MemoryStream ms = new MemoryStream(iconBytes))
+                {
+                    root.Menu.Icon = new Icon(ms);
+                    root.Menu.IconBase64 = null;
+                }
+            }
+
             foreach (var item in root.Menu.Items)
             {
                 if (!string.IsNullOrEmpty(item.ImageBase64))
@@ -43,6 +58,7 @@ namespace TrayApp.Code.Classes
                     using (MemoryStream ms = new MemoryStream(imageBytes))
                     {
                         item.Image = Image.FromStream(ms);
+                        item.ImageBase64 = null;
                     }
                 }
             }
@@ -54,7 +70,7 @@ namespace TrayApp.Code.Classes
     class Menu
     {
         public string Mouseover { get; set; }
-        public string TrayIcon { get; set; }
+        public string IconBase64 { get; set; }
         public List<Item> Items { get; set; }
 
         [JsonIgnore]

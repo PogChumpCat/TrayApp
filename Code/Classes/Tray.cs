@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Net.NetworkInformation;
 using AutostartManagement;
 using Microsoft.Win32;
+using TrayApp.Properties;
 
 namespace TrayApp.Code.Classes
 {
@@ -181,7 +182,8 @@ namespace TrayApp.Code.Classes
 
             var exit = new ToolStripMenuItem
             {
-                Text = "exit"
+                Text = "exit",
+                Image = Resources.sign_out
             };
 
             exit.Click += (sender, e) =>

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:TrayApp.UI.UserControls"
              xmlns:Control="clr-namespace:TrayApp.UI.UserControls"
              mc:Ignorable="d" 
-             d:DesignHeight="125" d:DesignWidth="350">
+             d:DesignHeight="125" d:DesignWidth="500">
 
     <Grid x:Name="addons" Margin="10,0,10,10">
         <Grid.Background>
@@ -26,15 +26,15 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Control:Input x:Name="name" Grid.Row="0" Grid.Column="0" Placeholder="Name" />
+        <Control:Input x:Name="name" Grid.Row="0" Grid.Column="0" Placeholder="Name" Loaded="name_Loaded" Margin="0,5,0,0" />
 
-        <ComboBox x:Name="comboBox" Grid.Row="0" Grid.Column="1" Margin="20,0,20,0" DataContext="standart">
+        <ComboBox x:Name="comboBox" Grid.Row="0" Grid.Column="1" Margin="20,5,20,0" DataContext="standart" >
             <TextBlock Text="test"/>
         </ComboBox>
 
-        <Control:Input x:Name="link" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,0,0" Placeholder="Link" />
+        <Control:Input x:Name="link" Width="200" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,0,0" HorizontalAlignment="Left" Placeholder="Link" />
 
-        <Control:Path_Input x:Name="input" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,10,0,0" Placeholder="Path to icon"/>
+        <Control:Path_Input x:Name="input" Width="200" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="0,10,0,0" Placeholder="Path to icon"/>
 
         <TextBlock x:Name="Number" Grid.Column="0" Grid.Row="3" Margin="0,15,0,0"/>
     </Grid>

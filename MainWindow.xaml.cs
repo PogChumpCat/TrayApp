@@ -115,7 +115,21 @@ namespace TrayApp
             //todo
         }
 
+        private void Load_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Do you want to load previous setings?", "Confirmation", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
 
+            }
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Do you want to save changes?", "Confirmation", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+
+            }
+        }
     }
 
 }

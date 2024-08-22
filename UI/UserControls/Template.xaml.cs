@@ -36,6 +36,9 @@ namespace TrayApp.UI.UserControls
             return addons;
         }
 
+        private void name_Loaded(object sender, RoutedEventArgs e)
+        {
 
+        }
     }
 }

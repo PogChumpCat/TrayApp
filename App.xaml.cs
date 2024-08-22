@@ -20,7 +20,7 @@ namespace TrayApp
         static readonly bool registerShortcutForAllUser = false;
         readonly AutostartManager autostartManager = new AutostartManager(WinFormsApp.ProductName, WinFormsApp.ExecutablePath, registerShortcutForAllUser);
         private readonly BackgroundWorker _worker = new BackgroundWorker();
-        public bool autoStart = false;
+        public bool autoStart = true;
 
 
         protected override void OnStartup(StartupEventArgs e)

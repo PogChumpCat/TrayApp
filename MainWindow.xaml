@@ -9,7 +9,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl Grid.Column="0">
-            <TabItem Header="TabItem">
+            <TabItem Header="Settings">
                 <Grid>
 
                     <Grid.ColumnDefinitions>
@@ -62,24 +62,32 @@
                         <Border Grid.Row="1" Background="Gray" Height="1" VerticalAlignment="Bottom"/>
                         <Border Grid.Row="2" Background="Gray" Height="1" VerticalAlignment="Bottom"/>
 
-                        <CheckBox Grid.Column="1" Grid.Row="0" Content="Autoatart" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+                        <TextBlock Text="vbfdrbhdbdfb" Grid.Row="0" Grid.Column="0" Margin="10,10,0,0"/>
+                        <CheckBox Grid.Column="1" Grid.Row="0" Content="Autoatart" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
 
-                        <Control:Input x:Name="Mouseover" Grid.Row="0" Grid.Column="0" MinWidth="117" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Center" Placeholder="Mouseover" />
+                        <Control:Input x:Name="Mouseover" Grid.Row="0" Grid.Column="0" MinWidth="117" MaxWidth="0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Center" Placeholder="Mouseover" />
                         <Control:Path_Input x:Name="IcoPath" Grid.Row="0" Grid.Column="0" MinWidth="117" HorizontalAlignment="Left" Margin="165,10,0,0" VerticalAlignment="Center" Placeholder="Path to Icon(.ico)" />
 
+                        <TextBlock Text="vbfdrbhdbdfb" Grid.Row="1" Grid.Column="0" Margin="10,10,0,0"/>
                         <Control:AddCmbElm x:Name="addCmb" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Center" Placeholder="Add type of link" />
                         <Control:DeleteCmbElm x:Name="delCmb" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" Margin="165,10,0,0" VerticalAlignment="Center"/>
                         
                     </Grid>
+
+                    <Button x:Name="BtnLoad" Grid.Column="3" Content="⟲" Height="30" Width="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"
+                       Click="Load_Click" FontSize="24" FontFamily="1"/>
+
+                    <Button Content="+" Grid.Column="3" Height="30" Width="30" FontSize="24" FontFamily="1" Click="Add_Click" VerticalAlignment="Top" Margin="0,55,0,0"/>
+                    <Button Content="-" Grid.Column="3" Height="30" Width="30" FontSize="24" FontFamily="1" Click="Remove_Click" VerticalAlignment="Top" Margin="10,100,10,0"/>
+                    <Button x:Name="BtnSave" Grid.Column="3" Height="30" Width="30" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,145,10,0"
+                       Click="Save_Click" FontSize="24" FontFamily="1" Content="✓"/>
+
+
                     <Border Grid.Column="3" Background="Gray" Panel.ZIndex="9" Width="1" HorizontalAlignment="Left"/>
-                    <Button Content="+" Grid.Column="3" Height="30" Width="30" FontSize="24" FontFamily="1" Click="Add_Click" VerticalAlignment="Top" Margin="10"/>
-                    <Button Content="-" Grid.Column="3" Height="30" Width="30" FontSize="24" FontFamily="1" Click="Remove_Click" VerticalAlignment="Top" Margin="10,56,10,0"/>
-
-
                 </Grid>
 
             </TabItem>
-            <TabItem Header="TabItem">
+            <TabItem Header="Q&amp;A">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
