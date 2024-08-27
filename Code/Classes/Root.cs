@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using Newtonsoft.Json;
+using TrayApp.Properties;
 
 namespace TrayApp.Code.Classes
 {
@@ -64,6 +65,15 @@ namespace TrayApp.Code.Classes
             }
 
             return root;
+        }
+
+        public static Image ByteToImage(byte[] byteAr)
+        {
+            using (MemoryStream ms = new MemoryStream(byteAr))
+            {
+                return Image.FromStream(ms);
+            }
+
         }
     }
 

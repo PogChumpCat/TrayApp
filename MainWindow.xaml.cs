@@ -28,8 +28,6 @@ namespace TrayApp
         public MainWindow()
         {
             InitializeComponent();
-            var tray = new Tray();
-            tray.InitializeNotifyIcon();
 
             VerticalScrollBar.Minimum = 0;
             VerticalScrollBar.Maximum = MainScrollViewer.ExtentHeight - MainScrollViewer.ViewportHeight;

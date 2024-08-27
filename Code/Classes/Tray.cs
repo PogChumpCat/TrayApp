@@ -8,67 +8,50 @@ using System.Net.NetworkInformation;
 using AutostartManagement;
 using Microsoft.Win32;
 using TrayApp.Properties;
+using System.Windows.Input;
+using WF = System.Windows.Forms;
+
+
+
 
 namespace TrayApp.Code.Classes
 {
     internal class Tray
-
     {
-
         private NotifyIcon notifyIcon;
-
         private ContextMenuStrip contextMenu;
+        private ContextMenuStrip settingsMenu;
 
         Root root = new Root();
 
         public bool autoStart = false;
 
-
-
         public void InitializeNotifyIcon()
-
         {
+            contextMenu = new ContextMenuStrip();
+            settingsMenu = new ContextMenuStrip();
+
+
 
             var tmp = "";
-
             string name = Environment.UserName;
-
             string appDataPath = $"C:\\Users\\{name}\\AppData\\Roaming";
-
             string folderPath = Path.Combine(appDataPath, "TrayApp");
-
             string icoPath = Path.Combine(folderPath, "logo.ico");
-
             string imgsPath = Path.Combine(folderPath, "Images");
-
             string filePath = Path.Combine(folderPath, "config.json");
 
 
-
-
-
             try
-
             {
-
                 tmp = File.ReadAllText(filePath);
-
             }
-
             catch
-
             {
-
                 Directory.CreateDirectory(folderPath);
-
                 Directory.CreateDirectory(imgsPath);
-
-                tmp = Encoding.UTF8.GetString(Properties.Resources.config);
-
+                tmp = Encoding.UTF8.GetString(Resources.config);
                 File.WriteAllText(filePath, tmp);
-
-
-
             }
 
 
@@ -76,13 +59,9 @@ namespace TrayApp.Code.Classes
 
 
             notifyIcon = new NotifyIcon
-
             {
-
                 Text = $"{root.Menu.Mouseover}",
-
                 Visible = true
-
             };
 
 
@@ -91,94 +70,70 @@ namespace TrayApp.Code.Classes
             {
                 notifyIcon.Icon = new Icon(icoPath);
             }
+
             else
             {
                 using (MemoryStream ms = new MemoryStream(Properties.Resources.logo))
                 {
                     notifyIcon.Icon = new Icon(ms);
                 }
+
             }
 
-            contextMenu = new ContextMenuStrip();
 
             try
-
             {
-
-
-
                 foreach (var menu in root.Menu.Items)
-
                 {
-
                     var path = Path.Combine(imgsPath, $"{menu.Title}.png");
 
                     var item = new ToolStripMenuItem
-
                     {
-
                         Text = menu.Title,
-
                     };
-
 
 
                     if (File.Exists(path))
                     {
                         item.Image = Image.FromFile(path);
                     }
+
                     else
                     {
-                        using (MemoryStream ms = new MemoryStream(Properties.Resources.logoPNG))
-                        {
-                            item.Image = Image.FromStream(ms);
-                        }
+                        Root.ByteToImage(Resources.logoPNG);
                     }
 
 
                     item.Click += (sender, e) =>
-
                     {
-
                         System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
-
                         {
-
                             FileName = menu.Url,
-
                             UseShellExecute = true
-
                         });
-
                     };
-
                     contextMenu.Items.Add(item);
-
                 }
-
             }
-
             catch (Exception ex)
-
             {
-
                 File.WriteAllText($"\\\\filer01.lktf.dom\\{name}\\Home\\Desktop\\error.txt", $"{ex}");
-
             }
 
-            notifyIcon.ContextMenuStrip = contextMenu;
 
-
-
-            notifyIcon.DoubleClick += (sender, e) =>
-
+            var settings = new ToolStripMenuItem
             {
-
-                MainWindow window = new MainWindow(true);
-
-
-
+                Text = "Settings",
+                Image = Root.ByteToImage(Resources.gear)
             };
+
+            settings.Click += (sender, e) =>
+            {
+                var mainWindow = new MainWindow();
+                mainWindow.Show();
+            };
+
+
 
             var exit = new ToolStripMenuItem
             {
@@ -192,9 +147,28 @@ namespace TrayApp.Code.Classes
                 Application.Exit();
                 Environment.Exit(0);
             };
-            contextMenu.Items.Add(exit);
 
-            notifyIcon.ContextMenuStrip = contextMenu;
+            settingsMenu.Items.Add(settings);
+            settingsMenu.Items.Add(exit);
+            notifyIcon.MouseClick += NotifyIcon_MouseClick;
         }
+
+
+
+        private void NotifyIcon_MouseClick(object sender, WF.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                contextMenu.Show(WF.Cursor.Position);
+            }
+
+            else if (e.Button == MouseButtons.Right)
+            {
+                settingsMenu.Show(WF.Cursor.Position);
+            }
+
+        }
+
     }
+
 }
