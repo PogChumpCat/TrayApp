@@ -148,6 +148,8 @@ namespace TrayApp.Code.Classes
                 Environment.Exit(0);
             };
 
+            settingsMenu.TopLevel = true;
+            contextMenu.TopLevel = true;
             settingsMenu.Items.Add(settings);
             settingsMenu.Items.Add(exit);
             notifyIcon.MouseClick += NotifyIcon_MouseClick;
@@ -159,12 +161,12 @@ namespace TrayApp.Code.Classes
         {
             if (e.Button == MouseButtons.Left)
             {
-                contextMenu.Show(WF.Cursor.Position);
+                contextMenu.Show(WF.Control.MousePosition);
             }
 
             else if (e.Button == MouseButtons.Right)
             {
-                settingsMenu.Show(WF.Cursor.Position);
+                settingsMenu.Show(WF.Control.MousePosition);
             }
 
         }

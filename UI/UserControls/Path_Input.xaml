@@ -5,14 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:TrayApp.UI.UserControls"
              mc:Ignorable="d" 
-                        d:DesignHeight="20" d:DesignWidth="250">
+                d:DesignHeight="20" d:DesignWidth="250">
     <Grid >
         <Grid Height="20" Background="White" Panel.ZIndex="-2">
             <Border x:Name="Border" BorderBrush="#FFABADB3" BorderThickness="1,1,1,1"/>
         </Grid>
 
         <TextBox x:Name="TxtInput" Margin="0,0,20,0" Height="20" VerticalAlignment="Center" FontSize="14" FontWeight="Light" 
-           Background="Transparent" BorderBrush="Transparent" BorderThickness="0" 
+           Background="Transparent" BorderBrush="Transparent" BorderThickness="0" ScrollViewer.HorizontalScrollBarVisibility="Auto"
            TextChanged="TxtInput_TextChanged" />
 
         <TextBlock x:Name="TblContext" Text="{Binding Placeholder, RelativeSource={RelativeSource AncestorType=UserControl}}" 

@@ -1,20 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using TrayApp.Code.Classes;
-using TrayApp.UI.UserControls;
-using UserControl = TrayApp.UI.UserControls;
+﻿    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Data;
+    using System.Windows.Documents;
+    using System.Windows.Input;
+    using System.Windows.Media;
+    using System.Windows.Media.Imaging;
+    using System.Windows.Navigation;
+    using System.Windows.Shapes;
+    using TrayApp.Code.Classes;
+    using TrayApp.UI.UserControls;
+    using UserControl = TrayApp.UI.UserControls;
 
 namespace TrayApp
 {
@@ -37,11 +37,14 @@ namespace TrayApp
             AddNewElement();
         }
 
-        public MainWindow(bool state) { if (state && !this.IsLoaded) { this.Visibility = Visibility.Visible; } else { this.Visibility = Visibility.Collapsed; } }
-
-        public static void Proces()
+        public MainWindow(int amount)
         {
 
+        }
+
+        public StackPanel GetScrol()
+        {
+            return DynamicContentPanel;
         }
 
         private void MainScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
@@ -67,9 +70,9 @@ namespace TrayApp
                 DynamicContentPanel.Children.Add(separator);
             }
 
-            var temp = new Template(amount);  
+            var temp = new Template(amount, DynamicContentPanel);
             DynamicContentPanel.Children.Add(temp);
-            amount++;  
+            amount++;
             UpdateScrollBar();
         }
 
@@ -83,6 +86,7 @@ namespace TrayApp
                 {
                     DynamicContentPanel.Children.RemoveAt(DynamicContentPanel.Children.Count - 1);
                 }
+
                 amount--;
                 UpdateScrollBar();
             }

@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace TrayApp.UI.UserControls
 {
@@ -20,20 +9,46 @@ namespace TrayApp.UI.UserControls
     /// </summary>
     public partial class Template : UserControl
     {
+        private StackPanel _dynamicContentPanel;
+        private StackPanel _mainScrollViewer;
+        private StackPanel _verticalScrollBar;
+
         public Template()
         {
-
+            InitializeComponent();
         }
 
-        public Template(int number)
+        // Конструктор для передачі DynamicContentPanel
+        public Template(int number, StackPanel dynamicContentPanel) 
         {
             InitializeComponent();
             Number.Text = number.ToString();
+            _dynamicContentPanel = dynamicContentPanel;
         }
 
         public Grid GetAddon()
         {
             return addons;
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+            if (_dynamicContentPanel != null)
+            {
+                int currentIndex = _dynamicContentPanel.Children.IndexOf(this);
+                // Видалення цього елемента з DynamicContentPanel
+                _dynamicContentPanel.Children.Remove(this);
+
+                // Видалення попереднього роздільника, якщо такий є
+                if (currentIndex > 0 && _dynamicContentPanel.Children[currentIndex - 1] is Separator)
+                {
+                    _dynamicContentPanel.Children.RemoveAt(currentIndex - 1);
+                }
+                else if (_dynamicContentPanel.Children.Count > 0 && _dynamicContentPanel.Children[0] is Separator)
+                {
+                    _dynamicContentPanel.Children.RemoveAt(0);
+                }
+            }
         }
     }
 }
