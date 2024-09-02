@@ -26,6 +26,7 @@ namespace TrayApp.Code.Classes
 
         public bool autoStart = false;
 
+
         public void InitializeNotifyIcon()
         {
             contextMenu = new ContextMenuStrip();
@@ -41,7 +42,6 @@ namespace TrayApp.Code.Classes
             string imgsPath = Path.Combine(folderPath, "Images");
             string filePath = Path.Combine(folderPath, "config.json");
 
-
             try
             {
                 tmp = File.ReadAllText(filePath);
@@ -55,7 +55,7 @@ namespace TrayApp.Code.Classes
             }
 
 
-            root = root.Deserialize(filePath);
+            root = Root.Deserialize(filePath);
 
 
             notifyIcon = new NotifyIcon
@@ -81,10 +81,12 @@ namespace TrayApp.Code.Classes
             }
 
 
-            try
+
+            foreach (var menu in root.Menu.Items)
             {
-                foreach (var menu in root.Menu.Items)
+                if (menu.Title != null && menu.Url != null)
                 {
+
                     var path = Path.Combine(imgsPath, $"{menu.Title}.png");
 
                     var item = new ToolStripMenuItem
@@ -97,10 +99,13 @@ namespace TrayApp.Code.Classes
                     {
                         item.Image = Image.FromFile(path);
                     }
-
+                    else if (menu.Image != null)
+                    {
+                        item.Image = menu.Image;
+                    }
                     else
                     {
-                        Root.ByteToImage(Resources.logoPNG);
+                        item.Image = Root.ByteToImage(Resources.logoPNG);
                     }
 
 
@@ -115,10 +120,7 @@ namespace TrayApp.Code.Classes
                     contextMenu.Items.Add(item);
                 }
             }
-            catch (Exception ex)
-            {
-                File.WriteAllText($"\\\\filer01.lktf.dom\\{name}\\Home\\Desktop\\error.txt", $"{ex}");
-            }
+
 
 
             var settings = new ToolStripMenuItem
@@ -150,7 +152,14 @@ namespace TrayApp.Code.Classes
 
             settingsMenu.TopLevel = true;
             contextMenu.TopLevel = true;
-            settingsMenu.Items.Add(settings);
+            try
+            {
+                settingsMenu.Items.Add(settings);
+            }
+            catch
+            {
+                MessageBox.Show("All of ellements in menu was empty");
+            }
             settingsMenu.Items.Add(exit);
             notifyIcon.MouseClick += NotifyIcon_MouseClick;
         }

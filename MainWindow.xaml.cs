@@ -1,20 +1,8 @@
-﻿    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Windows;
-    using System.Windows.Controls;
-    using System.Windows.Data;
-    using System.Windows.Documents;
-    using System.Windows.Input;
-    using System.Windows.Media;
-    using System.Windows.Media.Imaging;
-    using System.Windows.Navigation;
-    using System.Windows.Shapes;
-    using TrayApp.Code.Classes;
-    using TrayApp.UI.UserControls;
-    using UserControl = TrayApp.UI.UserControls;
+﻿using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Media;
+using TrayApp.Code.Classes;
+using TrayApp.UI.UserControls;
 
 namespace TrayApp
 {
@@ -23,28 +11,20 @@ namespace TrayApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int amount = 1;  // Зробили полем, замість статичної властивості
+        private int amount = 1;  
+        ScrollManager scrollManager;
 
         public MainWindow()
         {
             InitializeComponent();
 
-            VerticalScrollBar.Minimum = 0;
-            VerticalScrollBar.Maximum = MainScrollViewer.ExtentHeight - MainScrollViewer.ViewportHeight;
-            VerticalScrollBar.ViewportSize = MainScrollViewer.ViewportHeight;
-
-            MainScrollViewer.ScrollChanged += MainScrollViewer_ScrollChanged;
-            AddNewElement();
+            scrollManager = new ScrollManager(this);
+            scrollManager.AddNewElement();
         }
 
         public MainWindow(int amount)
         {
 
-        }
-
-        public StackPanel GetScrol()
-        {
-            return DynamicContentPanel;
         }
 
         private void MainScrollViewer_ScrollChanged(object sender, ScrollChangedEventArgs e)
@@ -57,59 +37,14 @@ namespace TrayApp
             MainScrollViewer.ScrollToVerticalOffset(e.NewValue);
         }
 
-        public void AddNewElement()
-        {
-            if (DynamicContentPanel.Children.Count > 0)
-            {
-                var separator = new Separator
-                {
-                    Margin = new Thickness(0, 5, 0, 5),
-                    Background = Brushes.Gray,
-                    Height = 1
-                };
-                DynamicContentPanel.Children.Add(separator);
-            }
-
-            var temp = new Template(amount, DynamicContentPanel);
-            DynamicContentPanel.Children.Add(temp);
-            amount++;
-            UpdateScrollBar();
-        }
-
-        public void RemoveElement()
-        {
-            if (DynamicContentPanel.Children.Count > 0)
-            {
-                DynamicContentPanel.Children.RemoveAt(DynamicContentPanel.Children.Count - 1);
-
-                if (DynamicContentPanel.Children.Count > 0 && DynamicContentPanel.Children[DynamicContentPanel.Children.Count - 1] is Separator)
-                {
-                    DynamicContentPanel.Children.RemoveAt(DynamicContentPanel.Children.Count - 1);
-                }
-
-                amount--;
-                UpdateScrollBar();
-            }
-        }
-
-        private void UpdateScrollBar()
-        {
-            MainScrollViewer.UpdateLayout();
-            VerticalScrollBar.Minimum = 0;
-            VerticalScrollBar.Maximum = MainScrollViewer.ExtentHeight - MainScrollViewer.ViewportHeight;
-            VerticalScrollBar.ViewportSize = MainScrollViewer.ViewportHeight;
-
-            VerticalScrollBar.Visibility = VerticalScrollBar.Maximum > 0 ? Visibility.Visible : Visibility.Collapsed;
-        }
-
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            AddNewElement();
+            scrollManager.AddNewElement();
         }
 
         private void Remove_Click(object sender, RoutedEventArgs e)
         {
-            RemoveElement();
+            scrollManager.RemoveElement();
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
@@ -121,7 +56,7 @@ namespace TrayApp
         {
             if (MessageBox.Show("Do you want to load previous setings?", "Confirmation", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
-
+                LinkDesigner.ConfigLoader(scrollManager);
             }
         }
 
@@ -129,7 +64,7 @@ namespace TrayApp
         {
             if (MessageBox.Show("Do you want to save changes?", "Confirmation", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
-
+                LinkDesigner.ConfigSaver(scrollManager);
             }
         }
     }

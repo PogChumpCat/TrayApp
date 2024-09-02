@@ -53,18 +53,18 @@ namespace TrayApp.UI.UserControls
         {
             var dialog = new Win.OpenFileDialog
             {
-                Filter = "Text documents (.txt)|*.txt"
+                Filter = "Icon files (.ico)|*.ico|(.png)|*.png|(.json)|*.json"
             };
             var result = dialog.ShowDialog();
             if (result.HasValue == true)
             {
-                TxtInput.Text = dialog.FileName;
+                Input.Text = dialog.FileName;
             }
         }
 
         private void TxtInput_TextChanged(object sender, TextChangedEventArgs e)
         {
-            TblContext.Visibility = string.IsNullOrEmpty(TxtInput.Text) ? Visibility.Visible : Visibility.Hidden;
+            TblContext.Visibility = string.IsNullOrEmpty(Input.Text) ? Visibility.Visible : Visibility.Hidden;
         }
     }
 }

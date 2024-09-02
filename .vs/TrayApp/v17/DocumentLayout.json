@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\code\\classes\\tray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:code\\classes\\tray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|c:\\users\\oleksandr\\source\\repos\\trayapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\template.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\template.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,60 +15,72 @@
       "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\template.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|c:\\users\\oleksandr\\source\\repos\\trayapp\\mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:mainwindow.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\input.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\input.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\path_input.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\path_input.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|c:\\users\\oleksandr\\source\\repos\\trayapp\\ui\\usercontrols\\input.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\input.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|c:\\users\\oleksandr\\source\\repos\\trayapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\deletecmbelm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\deletecmbelm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\input.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\input.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\code\\classes\\tray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:code\\classes\\tray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|c:\\users\\oleksandr\\source\\repos\\trayapp\\code\\classes\\linkdesigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:code\\classes\\linkdesigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\code\\classes\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:code\\classes\\root.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\addcmbelm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\addcmbelm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\code\\classes\\scrollmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:code\\classes\\scrollmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\code\\classes\\linkdesigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:code\\classes\\linkdesigner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\resources\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:resources\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\path_input.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\path_input.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\input.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\input.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\path_input.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\path_input.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\input.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\input.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\deletecmbelm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\deletecmbelm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\addcmbelm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\addcmbelm.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\addcmbelm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\addcmbelm.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\ui\\usercontrols\\input.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62927494-AACC-4AB9-BE8E-DD637FE4A75B}|TrayApp.csproj|solutionrelative:ui\\usercontrols\\input.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 439,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,46 +102,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Tray.cs",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\Tray.cs",
-              "RelativeDocumentMoniker": "Code\\Classes\\Tray.cs",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\Tray.cs",
-              "RelativeToolTip": "Code\\Classes\\Tray.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAqwKAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T15:06:00.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAmwCcAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAcwDgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:05:42.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Template.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Template.xaml.cs",
               "RelativeDocumentMoniker": "UI\\UserControls\\Template.xaml.cs",
               "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Template.xaml.cs",
               "RelativeToolTip": "UI\\UserControls\\Template.xaml.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:05:52.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 11,
+              "Title": "ScrollManager.cs",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\ScrollManager.cs",
+              "RelativeDocumentMoniker": "Code\\Classes\\ScrollManager.cs",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\ScrollManager.cs",
+              "RelativeToolTip": "Code\\Classes\\ScrollManager.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAiwEwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T16:31:57.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LinkDesigner.cs",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\LinkDesigner.cs",
+              "RelativeDocumentMoniker": "Code\\Classes\\LinkDesigner.cs",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\LinkDesigner.cs",
+              "RelativeToolTip": "Code\\Classes\\LinkDesigner.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowGIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T15:06:01.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Root.cs",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\Root.cs",
+              "RelativeDocumentMoniker": "Code\\Classes\\Root.cs",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\Root.cs",
+              "RelativeToolTip": "Code\\Classes\\Root.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwCcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T15:06:01.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tray.cs",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\Tray.cs",
+              "RelativeDocumentMoniker": "Code\\Classes\\Tray.cs",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\Tray.cs",
+              "RelativeToolTip": "Code\\Classes\\Tray.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAwwKAAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T15:06:00.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Input.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Input.xaml.cs",
               "RelativeDocumentMoniker": "UI\\UserControls\\Input.xaml.cs",
@@ -149,19 +190,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Path_Input.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Path_Input.xaml.cs",
               "RelativeDocumentMoniker": "UI\\UserControls\\Path_Input.xaml.cs",
               "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Path_Input.xaml.cs",
               "RelativeToolTip": "UI\\UserControls\\Path_Input.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAD4vywAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAD4vzcAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T15:05:53.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "AddCmbElm.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\AddCmbElm.xaml.cs",
               "RelativeDocumentMoniker": "UI\\UserControls\\AddCmbElm.xaml.cs",
@@ -185,40 +226,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Root.cs",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\Root.cs",
-              "RelativeDocumentMoniker": "Code\\Classes\\Root.cs",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\Root.cs",
-              "RelativeToolTip": "Code\\Classes\\Root.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAwwDUAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T15:06:01.256Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LinkDesigner.cs",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\LinkDesigner.cs",
-              "RelativeDocumentMoniker": "Code\\Classes\\LinkDesigner.cs",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Code\\Classes\\LinkDesigner.cs",
-              "RelativeToolTip": "Code\\Classes\\LinkDesigner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T15:06:01.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T16:03:37.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-27T16:03:37.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "config.json",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Resources\\config.json",
+              "RelativeDocumentMoniker": "Resources\\config.json",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\Resources\\config.json",
+              "RelativeToolTip": "Resources\\config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-30T15:04:45.131Z"
             }
           ]
         },
@@ -254,107 +282,10 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "bca4a0a3-6535-4b96-9365-940dad93c275",
+        "Id": "36f2ecdd-d204-4a1a-b4f6-1271ed32fc50",
         "Display": 0,
         "X": 955,
         "Y": 0,
-        "Width": 970,
-        "Height": 1085,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DeleteCmbElm.xaml",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\DeleteCmbElm.xaml",
-              "RelativeDocumentMoniker": "UI\\UserControls\\DeleteCmbElm.xaml",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\DeleteCmbElm.xaml",
-              "RelativeToolTip": "UI\\UserControls\\DeleteCmbElm.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:08:10.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-28T15:45:45.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Template.xaml",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Template.xaml",
-              "RelativeDocumentMoniker": "UI\\UserControls\\Template.xaml",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Template.xaml",
-              "RelativeToolTip": "UI\\UserControls\\Template.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:07:47.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DeleteCmbElm.xaml",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\DeleteCmbElm.xaml",
-              "RelativeDocumentMoniker": "UI\\UserControls\\DeleteCmbElm.xaml",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\DeleteCmbElm.xaml",
-              "RelativeToolTip": "UI\\UserControls\\DeleteCmbElm.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:08:10.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Input.xaml",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Input.xaml",
-              "RelativeDocumentMoniker": "UI\\UserControls\\Input.xaml",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Input.xaml",
-              "RelativeToolTip": "UI\\UserControls\\Input.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:08:02.668Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AddCmbElm.xaml",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\AddCmbElm.xaml",
-              "RelativeDocumentMoniker": "UI\\UserControls\\AddCmbElm.xaml",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\AddCmbElm.xaml",
-              "RelativeToolTip": "UI\\UserControls\\AddCmbElm.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:08:15.103Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "649f8ce2-26e4-4154-b5c4-094ef70789b5",
-        "Display": 0,
-        "X": 1525,
-        "Y": 316,
         "Width": 970,
         "Height": 1085,
         "WindowState": 0
@@ -372,48 +303,44 @@
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-27T19:57:07.154Z",
+              "WhenOpened": "2024-08-31T16:05:15.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Template.xaml",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Template.xaml",
               "RelativeDocumentMoniker": "UI\\UserControls\\Template.xaml",
               "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Template.xaml",
               "RelativeToolTip": "UI\\UserControls\\Template.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-27T20:07:11.637Z",
+              "WhenOpened": "2024-08-31T16:05:45.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Path_Input.xaml",
-              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Path_Input.xaml",
-              "RelativeDocumentMoniker": "UI\\UserControls\\Path_Input.xaml",
-              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Path_Input.xaml",
-              "RelativeToolTip": "UI\\UserControls\\Path_Input.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-27T20:06:11.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Input.xaml",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Input.xaml",
               "RelativeDocumentMoniker": "UI\\UserControls\\Input.xaml",
               "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Input.xaml",
               "RelativeToolTip": "UI\\UserControls\\Input.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-28T16:22:10.021Z",
+              "WhenOpened": "2024-08-31T16:05:47.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Path_Input.xaml",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Path_Input.xaml",
+              "RelativeDocumentMoniker": "UI\\UserControls\\Path_Input.xaml",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Path_Input.xaml",
+              "RelativeToolTip": "UI\\UserControls\\Path_Input.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-31T16:05:45.972Z",
               "EditorCaption": ""
             }
           ]
@@ -424,29 +351,69 @@
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "FloatingWindowState": {
-        "Id": "ee9a01a9-adab-4b16-9fe2-4ba5ac095d00",
+        "Id": "649f8ce2-26e4-4154-b5c4-094ef70789b5",
         "Display": 0,
-        "X": 1017,
-        "Y": 84,
+        "X": 955,
+        "Y": 0,
         "Width": 970,
-        "Height": 722,
+        "Height": 1085,
         "WindowState": 0
       },
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-28T15:45:45.566Z",
+              "WhenOpened": "2024-08-27T19:57:07.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Template.xaml",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Template.xaml",
+              "RelativeDocumentMoniker": "UI\\UserControls\\Template.xaml",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Template.xaml",
+              "RelativeToolTip": "UI\\UserControls\\Template.xaml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAACiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-27T20:07:11.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Input.xaml",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Input.xaml",
+              "RelativeDocumentMoniker": "UI\\UserControls\\Input.xaml",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Input.xaml",
+              "RelativeToolTip": "UI\\UserControls\\Input.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-28T16:22:10.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Path_Input.xaml",
+              "DocumentMoniker": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Path_Input.xaml",
+              "RelativeDocumentMoniker": "UI\\UserControls\\Path_Input.xaml",
+              "ToolTip": "C:\\Users\\Oleksandr\\source\\repos\\TrayApp\\UI\\UserControls\\Path_Input.xaml",
+              "RelativeToolTip": "UI\\UserControls\\Path_Input.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-27T20:06:11.426Z",
               "EditorCaption": ""
             }
           ]
